@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+	color: #4F5665;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin-top: 120px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container > div {
+  flex-grow: 1;
+  max-width: 50%;
+  margin: 16px 80px 0px 80px;
+} 
+
+.flex-container.figures {
+  display: flex;
+  flex-wrap: nowrap;  
+  box-shadow: 0px 4px 9px rgba(246, 61, 45, 0.2);
+  background-color: white;
+  height: 120px;
+  margin: 24px 80px; 
+  border-radius: 8px;
+}
+
+i {
+  padding: 8px;
+  margin-right: 4px;
+  background-color: #FFECEC;
+  color: #F63D2D;
+  border-radius: 16px;
+}
+/** Styles figma **/
+
+h1 {
+	font-size: 45px;
+	line-height: 55px;
+  color: #0B132A;
+}
+
+h2 {
+	font-size: 35px;
+	line-height: 50px;
+}
+
+p, li {
+  font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 30px; 
+}
+
+p{
+  margin: 16px 0;
+} 
+
+button.primary {
+	background-color: red;
+	box-shadow: 0px 4px 9px rgba(246, 61, 45, 0.2);
+	border-radius: 50px;
+	font-size: 16px;
+	color: #Ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 700;
+}
+
+button .secondary {
+	border: 1px solid #F63D2D;
+	box-shadow: 0px 4px 9px rgba(246, 61, 45, 0.2);
+	border-radius: 50px;
+	font-size: 14px;
+	color: #F63D2D;
+}
+
+.all-img {
+  max-width: 600px;
+}
+
+.section-img {
+  width: 260px;
+  margin: 80px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.subtitle {
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+}
+
+/* MENU */
+/**/
+/**/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background: #fff;
+  padding: 0 15px;
+}
+a {
+  color: #4F5665;
+  text-decoration: none;
+}
+.menu,
+.submenu {
+  list-style-type: none;
+}
+.logo {
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;  
+}
+
+img.evo {
+  height: 44px;
+}
+
+.item {
+  padding: 10px;
+}
+.item.button {
+  padding: 9px 5px; 
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+  color: #ccc;
+}
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+.menu li.subitem a {
+  padding: 15px;
+}
+.toggle {
+  order: 1;
+  font-size: 20px;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+.active .item {
+  display: block;
+}
+.button.secondary {
+  /* divider between buttons and menu links */
+  border-bottom: 1px #444 solid;
+}
+/* Submenu up from mobile screens */
+.submenu {
+  display: none;
+}
+.submenu-active .submenu {
+  display: block;
+}
+.has-submenu i {
+  font-size: 12px;
+}
+.has-submenu > a::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  content: "\f078";
+  color: #000;
+  padding-left: 5px;
+}
+.subitem a {
+  padding: 10px 15px;
+}
+.submenu-active {
+  background-color: #111;
+  border-radius: 3px;
+}
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+  .menu {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+  }
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+  /* Button up from tablet screen */
+  .menu li.button a {
+    padding: 4px 16px;
+    margin: 10px 0;
+  }
+  .button a {
+    color: #F63D2D;
+    background: #FFFFFF;
+    border: 1px solid #F63D2D;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 9px rgba(246, 61, 45, 0.2);
+    border-radius: 50px;
+  }
+  .button.secondary {
+    border: 0;
+  }
+  .button.secondary a {
+    color: #F63D2D;
+    background: #FFFFFF;
+    border: 1px solid #F63D2D;
+  }
+  .button a:hover {
+    text-decoration: none;
+  }
+  .button:not(.secondary) a:hover {
+    color: #F63D2D;
+     background: #FFF5F5;
+    border: 1px solid #F63D2D;   
+  }
+}
+/* Desktop menu */
+@media all and (min-width: 960px) {
+  .menu {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+  .button {
+    order: 2;
+  }
+  .submenu-active .submenu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    background: #111;
+  }
+  .toggle {
+    display: none;
+  }
+  .submenu-active {
+    border-radius: 0;
+  }
+}
+
+/**/
+/**/
+
+	
