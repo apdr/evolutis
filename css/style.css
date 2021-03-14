@@ -28,8 +28,28 @@ body {
   box-shadow: 0px 4px 9px rgba(246, 61, 45, 0.2);
   background-color: white;
   height: 120px;
-  margin: 24px 80px; 
+  margin: 40px 40px 0 40px; 
   border-radius: 8px;
+}
+
+.desc {
+  max-width: 420px;
+}
+
+.sect {
+  padding: 120px 0;
+  background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
+}
+
+.depa {
+  background: #F8F8F8;
+  padding: 40px 80px;
+}
+
+.depa > .flex-container {
+  background-color: white;
+  border-radius: 8px;
+  filter: drop-shadow(10px 10px 30px rgba(192, 192, 192, 0.25));
 }
 
 i {
@@ -88,7 +108,7 @@ button .secondary {
 
 .section-img {
   width: 260px;
-  margin: 80px 0;
+  filter: drop-shadow(10px 10px 30px rgba(192, 192, 192, 0.25));
 }
 
 .center {
@@ -99,7 +119,7 @@ button .secondary {
   font-family: Roboto;
 font-style: normal;
 font-weight: normal;
-font-size: 18px;
+font-size: 16px;
 line-height: 30px;
 }
 
@@ -135,10 +155,40 @@ a {
   left: 0;
   margin: auto;
   width: 100%;  
+  z-index: 100;
 }
 
 img.evo {
   height: 44px;
+}
+
+footer {
+  background-color: #F8F8F8;
+  padding: 150px 0;
+}
+
+li h4 {
+  font-weight: 700;
+  color: #0B132A;
+}
+
+.grey {
+  color: #AFB5C0;
+  margin-top: 18px;
+}
+
+.flex-container > div.img-depa {
+  max-width: none;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 16px;
+}
+
+footer > .flex-container > div > ul > li {
+  margin-top: 12px;
+  font-size: 14px;
 }
 
 .item {
