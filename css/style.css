@@ -44,12 +44,26 @@ body {
 .depa {
   background: #F8F8F8;
   padding: 40px 80px;
+  border-radius: 16px;
 }
 
 .depa > .flex-container {
   background-color: white;
   border-radius: 8px;
   filter: drop-shadow(10px 10px 30px rgba(192, 192, 192, 0.25));
+}
+
+.flex-container > div.img-depa {
+  max-width: none;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.img-depa > .section-img {
+  border-radius: 10px;
 }
 
 i {
@@ -175,15 +189,6 @@ li h4 {
 .grey {
   color: #AFB5C0;
   margin-top: 18px;
-}
-
-.flex-container > div.img-depa {
-  max-width: none;
-  text-align: right;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  border-radius: 16px;
 }
 
 footer > .flex-container > div > ul > li {
