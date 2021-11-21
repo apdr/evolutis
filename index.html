@@ -21,25 +21,19 @@
 <div class="fixed">
 <nav>
   	<ul class="menu">
-    <li class="logo"><a href="#"><img class="evo" src="img/evolutis-logo.png"></a></li>
-    <li class="item"><a href="#">Accueil</a></li>
+    <li class="logo"><a href="#acc"><img class="evo" src="img/evolutis-logo.png"></a></li>
+    <li class="item"><a href="#acc">Accueil</a></li>
     <li class="item has-submenu">
       <a tabindex="0">Nos services</a>
       <ul class="submenu">
         <li class="subitem"><a href="#save">Sauvergardes</a></li>
         <li class="subitem"><a href="#phot">Photopieurs</a></li>
         <li class="subitem"><a href="#info">Informatique</a></li>
+        <li class="subitem"><a href="#telep">Téléphonie</a></li>
       </ul>
     </li>
-    <li class="item has-submenu">
-      <a tabindex="0">Téléchargements</a>
-      <ul class="submenu">
-        <li class="subitem"><a href="#depan">Dépannage à distance</a></li>
-        <li class="subitem"><a href="#">Autres</a></li>	
-      </ul>
-    </li>
-    <li class="item"><a href="#reco">Clients</a></li>
-    <li class="item button"><a href="mailto:someone@yoursite.com">Nous contacter</a></li>
+    <li class="item"><a href="#depan">Dépannage à distance</a></li>
+    <li class="item button"><a target=”_blank” href="mailto:contact@evolutis-informatique.com">Nous contacter</a></li>
     <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
   </ul>
 </nav>
@@ -47,13 +41,12 @@
 
 <div class="container">
 
-<div class="flex-container">
+<div id="acc" class="flex-container">
   <div>
     <h1>Votre partenaire informatique de confiance</h1>
-    <p class="subtitle">
+    <p id="contact" class="subtitle">
       Votre satisfaction est notre priorité, que vous souhaitiez mettre vos données en sécurité, avoir des photocopieurs qui fonctionnent en toutes circonstances ou du mobilier de bureau adapté à vos besoins.
     </p>
-    <button class="primary">Nous contacter</button>
   </div>
   <div>
     <img class="all-img" src="img/img1.png">
@@ -63,7 +56,7 @@
 <div class="flex-container figures">
   <div><i class="fas fa-map-marker-alt"></i> 26 bis rue de Montreuil, 78000 Versailles</div>
   <div><i class="fas fa-phone-alt"></i> 01 30 69 76 56</div>
-  <div><i class="fas fa-envelope"></i> contact@evolutis-informatique.com</div>
+  <div><i class="fas fa-envelope"></i><a target=”_blank” href="mailto:contact@evolutis-informatique.com"> contact@evolutis-informatique.com</a></div>
 </div>  
 
 <div id="save" class="flex-container sect">
@@ -73,7 +66,7 @@
   <div>
     <div class="desc">
     <h2>Sauvegardez vos données</h2>
-    <p>Notre solution est « Tout en un », elle intègre le matériel, le logiciel et des services associés (l’installation, la maintenance matérielle et logicielle, le monitoring proactif).</p>    
+    <p>Notre solution est <b>« Tout en un »</b>, elle intègre le matériel, le logiciel et des services associés (l’installation, la maintenance matérielle et logicielle, le monitoring proactif).</p>    
   </div>
   </div>
 </div>
@@ -85,7 +78,7 @@
   <div>
     <div class="desc">
     <h2>Photocopieurs</h2>
-    <p>Nous vous proposons un service de location de photocopieurs sur mesure, vous permettant d’adapter vos dépenses à vos besoins et un accompagnement personnalisé afin de vous permettre de tirer le meilleur parti de vos produits.</p>
+    <p>Nous vous proposons un <b>service de location de photocopieurs sur mesure</b>, vous permettant d’adapter vos dépenses à vos besoins et un accompagnement personnalisé afin de vous permettre de tirer le meilleur parti de vos produits.</p>
   </div>
   </div>
 </div>
@@ -97,7 +90,19 @@
   <div>
     <div class="desc">
     <h2>Informatique</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+    <p><b>Un montant fixe par poste de travail, par mois</b>. Les produits et services de Evolutis informatique deviennent de plus en plus intéressants pour les entreprises. Vous n avez plus besoins d investir dans l achat d une série d appareils, vous payez un montant fixe par utilisateur et par mois, vous ne payez donc jamais plus que ce que vous utilisez.</p> 
+  </div>
+  </div>
+</div>
+
+<div id="telep" class="flex-container sect">
+  <div class="center">
+    <img class="section-img" src="img/img6.png">
+  </div>
+  <div>
+    <div class="desc">
+    <h2>Téléphonie</h2>
+    <p>La téléphonie sur ip est la solution <b>la plus simple à déployer en matière de téléphonie d'entreprise</b>. Un accès internet suffit à bénéficier d'un service innovant, fiable et économique. Passez à la telephonie d'entreprise nouvelle génération !</p> 
   </div>
   </div>
 </div>
@@ -108,7 +113,11 @@
     <div class="desc">
     <h2>Dépannage à distance</h2>
     <p>Vous pouvez nous contacter par téléphone pour un dépannage à distance.
-Vous pouvez également télécharger Teamviewer pour que nous puissions vous accompagner au mieux.</p>   
+Vous pouvez également télécharger Teamviewer pour que nous puissions vous accompagner au mieux.</p>  
+    <ul class="download">
+      <li><i class="fas fa-phone-alt"></i> 01 30 69 76 56</li>
+      <li><a href="download/TeamViewerQS.zip">Télécharger TeamViewer</a></li>
+    </ul>
 </div> 
   </div>
   <div class="img-depa">
@@ -138,10 +147,11 @@ Vous pouvez également télécharger Teamviewer pour que nous puissions vous acc
         <li>
           <h4>Comprendre notre offre</h4>
         </li>
-        <li>Accueil</li>
-        <li>Sauvegardes</li>
-        <li>Photocopieurs</li>
-        <li>Informatique</li>
+        <li><a href="#acc">Accueil</a></li>
+        <li><a href="#save">Sauvegardes</a></li>
+        <li><a href="#phot">Photocopieurs</a></li>
+        <li><a href="#info">Informatique</a></li>
+        <li><a href="#telep">Téléphonie</a></li>
       </ul>      
     </div>
 
@@ -150,10 +160,8 @@ Vous pouvez également télécharger Teamviewer pour que nous puissions vous acc
         <li>
           <h4>Travailler ensembles</h4>
         </li>
-        <li>Dépannage à distance</li>
-        <li>Téléchargements</li>
-        <li>Recommandations</li>
-        <li>Contacts</li>
+        <li><a href="#depan">Dépannage à distance</a></li>
+        <li><a href="#contact">Contacts</a></li>
       </ul>      
     </div>
   </div>
